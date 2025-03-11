@@ -133,21 +133,11 @@ router.get('/bit-pay', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
-
-
 router.get('/ether-pay', ensureAuthenticated, (req, res) =>
   res.render('etherpay', {
     user: req.user
   })
 );
-
-
-router.get('/litecoin-pay', ensureAuthenticated, (req, res) =>
-  res.render('litecoinpay', {
-    user: req.user
-  })
-);
-
 
 router.get('/tron-pay', ensureAuthenticated, (req, res) =>
   res.render('tronpay', {
@@ -155,17 +145,12 @@ router.get('/tron-pay', ensureAuthenticated, (req, res) =>
   })
 );
 
-router.get('/busd-pay', ensureAuthenticated, (req, res) =>
-  res.render('busd', {
+router.get('/binance-pay', ensureAuthenticated, (req, res) =>
+  res.render('binance', {
     user: req.user
   })
 );
 
-router.get('/ripple-pay', ensureAuthenticated, (req, res) =>
-  res.render('ripplepay', {
-    user: req.user
-  })
-);
 
 
 router.get('/usdt-pay', ensureAuthenticated, (req, res) =>
@@ -173,11 +158,7 @@ router.get('/usdt-pay', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
-router.get('/ltc-pay', ensureAuthenticated, (req, res) =>
-  res.render('ltc', {
-    user: req.user
-  })
-);
+
 
 
 
