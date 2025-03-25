@@ -79,18 +79,18 @@ router.get('/view-withdrawal', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
-
-router.get('/analytics', ensureAuthenticated, (req, res) =>
-  res.render('analytics', {
+router.get('/premium-VIP', ensureAuthenticated, (req, res) =>
+  res.render('premium', {
     user: req.user
   })
 );
 
-router.get('/settings', ensureAuthenticated, (req, res) =>
-  res.render('settings', {
+router.get('/RTW', ensureAuthenticated, (req, res) =>
+  res.render('rtw', {
     user: req.user
   })
 );
+
 
 router.get('/withdrawal-success', ensureAuthenticated, (req, res) =>
   res.render('success', {
